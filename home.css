@@ -1,0 +1,286 @@
+nav {   background-color: black; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: left; 
+    padding-right: 2em;
+    position:fixed;
+}
+
+
+      
+} 
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { text-decoration: none; 
+       display: block;
+}
+nav a:link { color: white; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover {  color: white; }
+nav ul ul { position: absolute;
+         background-color: black;
+    	 padding: 0;
+         display: none; 
+		 text-align: left;
+}
+nav ul ul li { border: 1px solid  #f3f3f3;
+ 		 display: block;
+         width: 8em;
+         padding-left: 1em;
+         margin-left: 0; 
+}
+nav li:hover ul { display: block; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+}
+
+.btn:hover {
+  background: #eaeaea;
+  color: #333;
+}
+
+
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: #333
+    url("https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=architecture-building-business-302769.jpg&fm=jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+
+
+#section-a {
+  background: #eaeaea;
+  color: #333;
+  padding-bottom: 2em;
+}
+
+
+
+#section-b {
+  padding: 2em 1em 1em;
+}
+
+#section-b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#section-b li {
+  margin-bottom: 1em;
+  background: #fff;
+  color: #333;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+
+
+#section-c {
+  background: #fff;
+  color: #333;
+  padding: 2em;
+}
+
+
+
+#section-d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section-d .box:first-child {
+  background: #2690d4;
+}
+
+
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #2690d4;
+  text-decoration: none;
+}
+
+
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+    
+    
+    @media only screen and (max-width: 64em) 
+{ 
+    body { margin: 0; background-color: #FFFFFF; }
+    #wrapper { min-width: 0; width: auto; box-shadow: none; border: none; }
+    header { padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0; height: auto; }
+    h1 { letter-spacing: 0.1em; }
+    main { margin-left: 0; }
+    nav { float: none; width: auto; text-align: center; padding: 0.5em; }
+    nav li { display: inline; padding-top: 0.25em; padding-bottom: 0.25em; padding-left: 0.75em; padding-right: 0.75em; }
+    
+    footer { margin: 0; }    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  #section-a .content-text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section-a .content-text p {
+    padding-top: 0;
+  }
+
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  .box,
+  #main-footer div {
+    grid-column: span 2;
+  }
+
+  #section-b ul {
+    display: flex;
+      
+      
+      
+      
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 31%;
+  }
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+ 
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #black;
+    padding: 10px;
+}
+
+
+.column {
+    float: right;
+    width: 50%;
+    margin-top: px;
+    padding: 20px;
+}
+
+
